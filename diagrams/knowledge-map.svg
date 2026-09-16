@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1660" font-family="Segoe UI, Helvetica, sans-serif" font-size="14">
+  <defs>
+    <marker id="k1" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+  </defs>
+  <rect width="760" height="1660" fill="white"/>
+  <text x="380" y="42" text-anchor="middle" font-size="19" font-weight="bold">AERODYNAMICS KNOWLEDGE MAP</text>
+  <text x="380" y="66" text-anchor="middle" fill="#5f6368" font-size="12.5">each arrow means "you must own this before the next box makes sense"</text>
+
+  <!-- boxes: cx=380 w=340 -->
+  <g font-weight="bold">
+    <rect x="210" y="90"  width="340" height="52" rx="9" fill="#eef3fb" stroke="#1f6eb" stroke-width="2"/><text x="380" y="122" text-anchor="middle">1. Fluid Mechanics</text>
+    <rect x="210" y="192" width="340" height="52" rx="9" fill="#eef3fb" stroke="#1f6eb" stroke-width="2"/><text x="380" y="224" text-anchor="middle">2. Aerodynamics (forces from flow)</text>
+    <rect x="210" y="294" width="340" height="52" rx="9" fill="#eef3fb" stroke="#1f6eb" stroke-width="2"/><text x="380" y="326" text-anchor="middle">3. Airfoils &amp; Wings</text>
+    <rect x="210" y="396" width="340" height="52" rx="9" fill="#e8f0fe" stroke="#1f6eb" stroke-width="2"/><text x="380" y="421" text-anchor="middle" font-size="13">4. Pressure / Shear distributions</text><text x="380" y="439" text-anchor="middle" font-size="11" font-weight="normal" fill="#5f6368">where the force actually comes from</text>
+    <rect x="210" y="498" width="340" height="52" rx="9" fill="#e8f0fe" stroke="#1f6eb" stroke-width="2"/><text x="380" y="530" text-anchor="middle">5. Lift / Drag / Downforce</text>
+    <rect x="210" y="600" width="340" height="52" rx="9" fill="#e8f0fe" stroke="#1f6eb" stroke-width="2"/><text x="380" y="632" text-anchor="middle">6. Boundary Layers</text>
+    <rect x="210" y="702" width="340" height="52" rx="9" fill="#e8f0fe" stroke="#1f6eb" stroke-width="2"/><text x="380" y="734" text-anchor="middle">7. Separation &amp; Vortices</text>
+    <rect x="210" y="804" width="340" height="52" rx="9" fill="#e6f4ea" stroke="#188038" stroke-width="2"/><text x="380" y="836" text-anchor="middle">8. Race-Car Aerodynamics</text>
+    <rect x="210" y="906" width="340" height="52" rx="9" fill="#e6f4ea" stroke="#188038" stroke-width="2"/><text x="380" y="938" text-anchor="middle">9. Ground Effect (floor, tunnels)</text>
+    <rect x="210" y="1008" width="340" height="52" rx="9" fill="#e6f4ea" stroke="#188038" stroke-width="2"/><text x="380" y="1033" text-anchor="middle" font-size="13">10. Wings / Floor / Diffuser system</text><text x="380" y="1051" text-anchor="middle" font-size="11" font-weight="normal" fill="#5f6368">the F1 car as one coupled device</text>
+    <rect x="210" y="1110" width="340" height="52" rx="9" fill="#e6f4ea" stroke="#188038" stroke-width="2"/><text x="380" y="1142" text-anchor="middle">11. Wake &amp; Wheel-Wake Management</text>
+    <rect x="210" y="1212" width="340" height="52" rx="9" fill="#fef7e0" stroke="#f9ab00" stroke-width="2"/><text x="380" y="1244" text-anchor="middle">12. Aero Balance &amp; Vehicle Dynamics</text>
+    <rect x="210" y="1314" width="160" height="52" rx="9" fill="#fef7e0" stroke="#f9ab00" stroke-width="2"/><text x="290" y="1346" text-anchor="middle">13. Wind Tunnel</text>
+    <rect x="400" y="1314" width="150" height="52" rx="9" fill="#fef7e0" stroke="#f9ab00" stroke-width="2"/><text x="475" y="1346" text-anchor="middle">14. CFD</text>
+    <rect x="210" y="1416" width="340" height="52" rx="9" fill="#fce8e6" stroke="#d93025" stroke-width="2"/><text x="380" y="1448" text-anchor="middle">15. Validation &amp; Correlation</text>
+    <rect x="210" y="1518" width="340" height="52" rx="9" fill="#fce8e6" stroke="#d93025" stroke-width="2"/><text x="380" y="1550" text-anchor="middle">16. Aerodynamic Development</text>
+  </g>
+
+  <!-- arrows down the chain -->
+  <line x1="380" y1="142" x2="380" y2="188" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="244" x2="380" y2="290" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="346" x2="380" y2="392" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="448" x2="380" y2="494" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="550" x2="380" y2="596" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="652" x2="380" y2="698" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="754" x2="380" y2="800" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="856" x2="380" y2="902" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="958" x2="380" y2="1004" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="1060" x2="380" y2="1106" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="1162" x2="380" y2="1208" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="330" y1="1264" x2="300" y2="1310" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="430" y1="1264" x2="460" y2="1310" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="290" y1="1366" x2="350" y2="1412" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="470" y1="1366" x2="410" y2="1412" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+  <line x1="380" y1="1468" x2="380" y2="1514" stroke="#1f6eb" stroke-width="2.4" marker-end="url(#k1)"/>
+
+  <!-- side annotations -->
+  <text x="580" y="640" fill="#5f6368" font-size="12">the gateway concept:</text>
+  <text x="580" y="656" fill="#5f6368" font-size="12">most F1 failures are</text>
+  <text x="580" y="672" fill="#5f6368" font-size="12">boundary-layer failures</text>
+  <text x="80" y="920" fill="#5f6368" font-size="12">the physics that makes</text>
+  <text x="80" y="936" fill="#5f6368" font-size="12">an F1 car fast</text>
+  <text x="590" y="1445" fill="#5f6368" font-size="12">simulation is an</text>
+  <text x="590" y="1461" fill="#5f6368" font-size="12">instrument, not proof</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">
+  <defs>
+    <marker id="l1" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+  </defs>
+  <rect width="940" height="440" fill="white"/>
+  <text x="60" y="40" font-weight="bold" font-size="15">The aerodynamic development loop</text>
+
+  <!-- boxes around ellipse center (470,250) rx 330 ry 130 -->
+  <!-- 1 baseline -->
+  <rect x="90" y="110" width="150" height="56" rx="10" fill="#eef3fb" stroke="#1f6feb" stroke-width="2"/>
+  <text x="105" y="133" font-weight="bold">1 Baseline</text>
+  <text x="105" y="151" font-size="11.5">car + validated CFD/WT model</text>
+  <!-- 2 hypothesis -->
+  <rect x="330" y="60" width="170" height="56" rx="10" fill="#e6f4ea" stroke="#188038" stroke-width="2"/>
+  <text x="345" y="83" font-weight="bold">2 Hypothesis</text>
+  <text x="345" y="101" font-size="11.5">"flow mechanism X is limiting load"</text>
+  <!-- 3 geometry -->
+  <rect x="580" y="60" width="170" height="56" rx="10" fill="#e6f4ea" stroke="#188038" stroke-width="2"/>
+  <text x="595" y="83" font-weight="bold">3 Geometry change</text>
+  <text x="595" y="101" font-size="11.5">CAD modification</text>
+  <!-- 4 CFD -->
+  <rect x="740" y="150" width="150" height="56" rx="10" fill="#fef7e0" stroke="#f9ab00" stroke-width="2"/>
+  <text x="755" y="173" font-weight="bold">4 CFD run</text>
+  <text x="755" y="191" font-size="11.5">same mesh/BC policy</text>
+  <!-- 5 analysis -->
+  <rect x="700" y="280" width="170" height="56" rx="10" fill="#fef7e0" stroke="#f9ab00" stroke-width="2"/>
+  <text x="715" y="303" font-weight="bold">5 Analysis</text>
+  <text x="715" y="321" font-size="11.5">ΔCLA, ΔCD, flow fields</text>
+  <!-- 6 test -->
+  <rect x="450" y="330" width="170" height="56" rx="10" fill="#fce8e6" stroke="#d93025" stroke-width="2"/>
+  <text x="465" y="353" font-weight="bold">6 Wind tunnel / track</text>
+  <text x="465" y="371" font-size="11.5">aero maps, rakes</text>
+  <!-- 7 correlation -->
+  <rect x="210" y="280" width="170" height="56" rx="10" fill="#fce8e6" stroke="#d93025" stroke-width="2"/>
+  <text x="225" y="303" font-weight="bold">7 Correlation</text>
+  <text x="225" y="321" font-size="11.5">CFD ↔ WT ↔ track</text>
+  <!-- 8 decision -->
+  <rect x="60" y="170" width="150" height="56" rx="10" fill="#f1f3f4" stroke="#202124" stroke-width="2"/>
+  <text x="75" y="193" font-weight="bold">8 Decision</text>
+  <text x="75" y="211" font-size="11.5">keep / iterate / discard</text>
+
+  <!-- arrows -->
+  <path d="M245,140 Q290,95 325,90" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M502,88 Q555,85 575,87" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M755,118 Q790,130 805,148" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M810,208 Q800,250 780,278" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M695,310 Q640,330 625,338" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M445,352 Q390,345 385,330" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M240,278 Q180,250 165,228" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+  <path d="M140,168 Q140,150 150,140" fill="none" stroke="#1f6feb" stroke-width="2.2" marker-end="url(#l1)"/>
+
+  <rect x="355" y="180" width="230" height="80" rx="10" fill="#f1f3f4" stroke="#202124" stroke-width="1.5"/>
+  <text x="375" y="207" font-weight="bold">ITERATE</text>
+  <text x="375" y="227" font-size="11.5">thousands of cycles per season,</text>
+  <text x="375" y="243" font-size="11.5">under FIA aero-testing restrictions</text>
+</svg>

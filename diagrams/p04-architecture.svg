@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" font-family="Segoe UI, Helvetica, sans-serif" font-size="12.5">
+  <defs>
+    <marker id="aB" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+    <marker id="aK" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#5f6368"/></marker>
+    <marker id="aG" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#188038"/></marker>
+  </defs>
+  <rect width="940" height="560" fill="white"/>
+  <line x1="30" y1="452" x2="910" y2="452" stroke="#202124" stroke-width="2.5"/>
+  <!-- car silhouette -->
+  <path d="M155,442 L205,436 L235,415 L325,404 L365,362 L415,346 L455,318 L505,310 L565,322 L645,362 L705,402 L765,428 L805,442 Z"
+        fill="#f1f3f4" stroke="#202124" stroke-width="2"/>
+  <!-- wheels -->
+  <circle cx="255" cy="418" r="33" fill="#e8eaed" stroke="#202124" stroke-width="2"/>
+  <circle cx="255" cy="418" r="12" fill="white" stroke="#202124"/>
+  <circle cx="665" cy="416" r="35" fill="#e8eaed" stroke="#202124" stroke-width="2"/>
+  <circle cx="665" cy="416" r="13" fill="white" stroke="#202124"/>
+  <!-- front wing -->
+  <path d="M140,438 L215,432 L215,438 L140,444 Z" fill="#202124"/>
+  <text x="95" y="470" font-weight="bold">1 Front wing</text>
+  <text x="95" y="486" fill="#5f6368">sets up ALL downstream flow;</text>
+  <text x="95" y="500" fill="#5f6368">washes flow around front tyre</text>
+  <!-- front tyre wake -->
+  <path d="M290,400 q40,25 90,20" fill="none" stroke="#d93025" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#aK)"/>
+  <text x="285" y="385" fill="#d93025" font-size="11">front-tyre wake (dirty, turbulent)</text>
+  <!-- sidepod inlet -->
+  <path d="M400,415 L440,412 L440,420 L400,423 Z" fill="#1f6feb"/>
+  <line x1="370" y1="430" x2="398" y2="419" stroke="#1f6feb" stroke-width="2.5" marker-end="url(#aB)"/>
+  <text x="330" y="447" fill="#1f6feb" font-weight="bold">2 Sidepod inlet</text>
+  <text x="300" y="500" fill="#1f6feb">cooling flow: inlet → radiators → exits</text>
+  <text x="300" y="514" fill="#1f6feb">(drag cost, wakes, floor feed)</text>
+  <!-- floor / venturi -->
+  <path d="M300,442 L640,442 L640,448 L300,448 Z" fill="#188038" opacity="0.85"/>
+  <line x1="310" y1="470" x2="420" y2="466" stroke="#188038" stroke-width="2.5" marker-end="url(#aG)"/>
+  <line x1="430" y1="468" x2="560" y2="462" stroke="#188038" stroke-width="3" marker-end="url(#aG)"/>
+  <text x="290" y="490" fill="#188038" font-weight="bold">3 Floor + venturi tunnels</text>
+  <text x="290" y="506" fill="#5f6368" font-size="11">the main downforce device of the 2022+ era:</text>
+  <text x="290" y="520" fill="#5f6368" font-size="11">accelerate flow under the car, recover it in the diffuser</text>
+  <!-- diffuser -->
+  <path d="M640,442 L730,430 L730,444 L640,448 Z" fill="#188038"/>
+  <line x1="620" y1="446" x2="705" y2="420" stroke="#188038" stroke-width="3" marker-end="url(#aG)"/>
+  <text x="640" y="480" fill="#188038" font-weight="bold">4 Diffuser</text>
+  <text x="640" y="496" fill="#5f6368" font-size="11">expands and recovers the underbody flow</text>
+  <!-- beam wing -->
+  <path d="M700,415 L770,405 L772,412 L702,422 Z" fill="#202124"/>
+  <text x="745" y="440" font-weight="bold" font-size="12">5 Beam wing</text>
+  <text x="745" y="455" fill="#5f6368" font-size="11">turns diffuser flow upward</text>
+  <!-- rear wing + DRS -->
+  <path d="M770,300 L890,290 L892,302 L772,312 Z" fill="#202124"/>
+  <path d="M800,318 L892,308 L893,317 L802,327 Z" fill="#5f6368"/>
+  <line x1="830" y1="270" x2="830" y2="286" stroke="#188038" stroke-width="2.5" marker-end="url(#aG)"/>
+  <text x="700" y="265" font-weight="bold">6 Rear wing (+ DRS flap)</text>
+  <text x="700" y="281" fill="#5f6368" font-size="11">biggest single drag item; flap opens on straights</text>
+  <!-- wake -->
+  <path d="M895,330 q20,40 -5,80" fill="none" stroke="#d93025" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#aK)"/>
+  <text x="845" y="425" fill="#d93025" font-size="11">rear wake</text>
+  <!-- system note -->
+  <rect x="35" y="30" width="870" height="52" rx="8" fill="#eef3fb" stroke="#1f6feb" stroke-width="1"/>
+  <text x="50" y="51" font-weight="bold">The car is ONE aerodynamic system: what the front wing does decides what the floor can do; what the diffuser does decides what the rear wing sees.</text>
+  <text x="50" y="70" fill="#5f6368">Upstream changes propagate downstream — that is why F1 aero development evaluates components in the full-car context, never in isolation.</text>
+  <!-- airflow over body -->
+  <path d="M150,340 q180,-60 420,-30 q120,15 260,-10" fill="none" stroke="#5f6368" stroke-width="1.6" marker-end="url(#aK)" opacity="0.7"/>
+  <text x="180" y="330" fill="#5f6368" font-size="11">attached over-body flow</text>
+</svg>

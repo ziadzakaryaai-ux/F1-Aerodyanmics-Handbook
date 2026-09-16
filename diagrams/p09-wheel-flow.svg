@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 470" font-family="Segoe UI, Helvetica, sans-serif" font-size="12.5">
+  <defs>
+    <marker id="w1" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+    <marker id="w2" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#d93025"/></marker>
+    <marker id="w3" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#5f6368"/></marker>
+  </defs>
+  <rect width="940" height="470" fill="white"/>
+  <text x="40" y="32" font-weight="bold" font-size="14">Flow around an exposed, rotating racing wheel (side view, car moves to the right)</text>
+
+  <line x1="30" y1="400" x2="910" y2="400" stroke="#202124" stroke-width="3"/>
+  <text x="845" y="420" fill="#5f6368">ground</text>
+
+  <!-- wheel -->
+  <circle cx="330" cy="330" r="68" fill="#e8eaed" stroke="#202124" stroke-width="2.5"/>
+  <circle cx="330" cy="330" r="26" fill="white" stroke="#202124" stroke-width="2"/>
+  <path d="M310,290 A48,48 0 0 1 372,300" fill="none" stroke="#5f6368" stroke-width="1.5" marker-end="url(#w3)"/>
+  <text x="255" y="262" fill="#5f6368">rotation: top moves forward</text>
+
+  <!-- stagnation -->
+  <circle cx="262" cy="330" r="4" fill="#202124"/>
+  <text x="150" y="318">stagnation</text>
+
+  <!-- jetting -->
+  <path d="M285,392 Q250,392 225,395" fill="none" stroke="#1f6feb" stroke-width="2.5" marker-end="url(#w1)"/>
+  <path d="M300,396 Q270,402 240,404" fill="none" stroke="#1f6feb" stroke-width="2" marker-end="url(#w1)"/>
+  <text x="60" y="378" fill="#1f6feb" font-weight="bold">"jetting": ground-blocked flow</text>
+  <text x="60" y="394" fill="#1f6feb">squirts forward under the front of the tyre</text>
+
+  <!-- separation points -->
+  <circle cx="390" cy="295" r="4" fill="#d93025"/>
+  <text x="400" y="285" fill="#d93025">S1 upper separation</text>
+  <circle cx="382" cy="372" r="4" fill="#d93025"/>
+  <text x="392" y="390" fill="#d93025">S2 lower separation</text>
+
+  <!-- wake vortices -->
+  <circle cx="475" cy="300" r="24" fill="none" stroke="#d93025" stroke-width="2.2"/>
+  <path d="M462,292 a14,14 0 1 0 16,16" fill="none" stroke="#d93025" stroke-width="1.5" marker-end="url(#w2)"/>
+  <circle cx="470" cy="365" r="20" fill="none" stroke="#d93025" stroke-width="2.2"/>
+  <path d="M458,358 a12,12 0 1 1 14,14" fill="none" stroke="#d93025" stroke-width="1.5" marker-end="url(#w2)"/>
+  <text x="520" y="295" fill="#d93025" font-weight="bold">wake: counter-rotating vortex pair</text>
+  <text x="520" y="312" fill="#d93025">+ low-energy recirculating core</text>
+
+  <!-- upwash -->
+  <path d="M470,335 Q500,280 505,225" fill="none" stroke="#1f6feb" stroke-width="2.5" marker-end="url(#w1)"/>
+  <text x="515" y="235" fill="#1f6feb" font-weight="bold">rotation pumps the wake UPWARD</text>
+  <text x="515" y="252" fill="#1f6feb">(a stationary wheel's wake stays lower and smaller)</text>
+
+  <!-- downstream impact -->
+  <rect x="40" y="30" width="860" height="50" rx="8" fill="#fdeceb" stroke="#d93025" stroke-width="1"/>
+  <text x="55" y="50" font-weight="bold">Why it dominates F1 aerodynamics: four exposed rotating wheels inject massive, unsteady wakes into every downstream surface.</text>
+  <text x="55" y="68">Front-tyre wake contaminates the floor, sidepods and everything behind it — controlling it (outwash, fences, covers) is worth more than any single "wing" tweak.</text>
+  <text x="40" y="450" fill="#5f6368" font-size="11">Schematic; exact separation locations depend on ride height, tyre load and rotation — see Part IX.</text>
+</svg>

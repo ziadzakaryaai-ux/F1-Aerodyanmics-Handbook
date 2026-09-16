@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">
+  <rect width="920" height="470" fill="white"/>
+  <!-- ground -->
+  <line x1="30" y1="380" x2="890" y2="380" stroke="#202124" stroke-width="2.5"/>
+  <text x="845" y="400" fill="#5f6368" font-size="12">ground</text>
+  <!-- direction of travel -->
+  <line x1="120" y1="60" x2="260" y2="60" stroke="#5f6368" stroke-width="2" marker-end="url(#arrG)"/>
+  <text x="130" y="50" fill="#5f6368">direction of travel V</text>
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#5f6368"/></marker>
+    <marker id="arrR" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#d93025"/></marker>
+    <marker id="arrN" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#188038"/></marker>
+  </defs>
+  <!-- car silhouette (schematic) -->
+  <path d="M150,368 L200,362 L230,340 L320,330 L360,290 L410,275 L450,245 L500,238 L560,250 L640,290 L700,330 L760,355 L800,368 Z"
+        fill="#f1f3f4" stroke="#202124" stroke-width="2"/>
+  <!-- wheels -->
+  <circle cx="250" cy="345" r="34" fill="#e8eaed" stroke="#202124" stroke-width="2"/>
+  <circle cx="250" cy="345" r="13" fill="white" stroke="#202124" stroke-width="1.5"/>
+  <circle cx="660" cy="343" r="36" fill="#e8eaed" stroke="#202124" stroke-width="2"/>
+  <circle cx="660" cy="343" r="14" fill="white" stroke="#202124" stroke-width="1.5"/>
+  <!-- drag force -->
+  <line x1="480" y1="200" x2="360" y2="200" stroke="#d93025" stroke-width="3.5" marker-end="url(#arrR)"/>
+  <text x="490" y="196" fill="#d93025" font-weight="bold">Drag, D = ½ρV²·C_D·A</text>
+  <text x="490" y="213" fill="#d93025" font-size="11">(acts backward, at an effective height above the ground)</text>
+  <!-- weight at CG -->
+  <circle cx="470" cy="315" r="5" fill="#202124"/>
+  <text x="430" y="305" fill="#202124">CG</text>
+  <line x1="470" y1="315" x2="470" y2="375" stroke="#202124" stroke-width="3.5" marker-end="url(#arrN)"/>
+  <text x="478" y="360" fill="#202124" font-weight="bold">Weight, W = mg</text>
+  <!-- downforce front -->
+  <line x1="280" y1="150" x2="280" y2="215" stroke="#188038" stroke-width="3.5" marker-end="url(#arrN)"/>
+  <text x="205" y="140" fill="#188038" font-weight="bold">Front downforce</text>
+  <text x="205" y="157" fill="#188038" font-size="11">(front wing + nose + tires)</text>
+  <!-- downforce rear -->
+  <line x1="705" y1="130" x2="705" y2="215" stroke="#188038" stroke-width="3.5" marker-end="url(#arrN)"/>
+  <text x="655" y="120" fill="#188038" font-weight="bold">Rear downforce</text>
+  <text x="640" y="137" fill="#188038" font-size="11">(rear wing + diffuser + floor)</text>
+  <!-- centre of pressure -->
+  <line x1="487" y1="255" x2="487" y2="180" stroke="#188038" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="487,180 482,190 492,190" fill="#188038"/>
+  <text x="380" y="170" fill="#188038">centre of pressure (CoP): the point where the</text>
+  <text x="380" y="186" fill="#188038">total downforce effectively acts</text>
+  <!-- balance note -->
+  <rect x="40" y="410" width="840" height="48" rx="8" fill="#eef3fb" stroke="#1f6feb" stroke-width="1"/>
+  <text x="55" y="430" fill="#202124" font-weight="bold">Aero balance = share of downforce carried by the front axle.</text>
+  <text x="55" y="448" fill="#202124">CoP ahead of / behind the CG, and how that split changes with speed, decides understeer and oversteer (Part X).</text>
+</svg>

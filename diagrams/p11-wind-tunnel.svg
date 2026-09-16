@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" font-family="Segoe UI, Helvetica, sans-serif" font-size="12.5">
+  <defs>
+    <marker id="t1" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+  </defs>
+  <rect width="940" height="400" fill="white"/>
+  <text x="40" y="32" font-weight="bold" font-size="14">F1-type wind tunnel with rolling road (schematic)</text>
+
+  <!-- tunnel body -->
+  <rect x="60" y="150" width="120" height="90" fill="#eef3fb" stroke="#202124" stroke-width="2"/>
+  <text x="75" y="200" fill="#5f6368">settling</text><text x="75" y="216" fill="#5f6368">chamber +</text><text x="75" y="232" fill="#5f6368">screens</text>
+
+  <path d="M180,150 L260,185 L260,205 L180,240 Z" fill="#eef3fb" stroke="#202124" stroke-width="2"/>
+  <text x="188" y="180">nozzle</text>
+  <text x="188" y="196" font-size="10.5" fill="#5f6368">accelerates flow</text>
+
+  <rect x="260" y="185" width="330" height="20" fill="#f1f3f4" stroke="#202124" stroke-width="2"/>
+  <!-- test section interior -->
+  <rect x="300" y="140" width="240" height="45" fill="white" stroke="#202124" stroke-width="2"/>
+  <!-- model -->
+  <path d="M330,180 L370,176 L390,165 L430,162 L470,170 L505,178 L520,180 Z" fill="#202124"/>
+  <circle cx="365" cy="181" r="5" fill="#5f6368"/>
+  <circle cx="495" cy="181" r="5" fill="#5f6368"/>
+  <text x="315" y="132" font-weight="bold">scale model (typically 50–60%)</text>
+  <!-- sting -->
+  <path d="M540,162 L575,150 L575,170 L540,178 Z" fill="#3c4043"/>
+  <text x="545" y="140">sting + 6-component balance</text>
+  <!-- rolling road -->
+  <rect x="300" y="185" width="240" height="8" fill="#188038"/>
+  <path d="M300,201 L330,201" stroke="#188038" stroke-width="2" marker-end="url(#t1)"/>
+  <text x="330" y="222" fill="#188038" font-weight="bold">rolling road (moving belt) — matches ground speed</text>
+  <text x="330" y="238" fill="#5f6368" font-size="11">without it, the floor boundary layer is wrong and underbody data is meaningless</text>
+
+  <path d="M590,185 L680,150 L680,220 L590,205 Z" fill="#eef3fb" stroke="#202124" stroke-width="2"/>
+  <text x="600" y="195">diffuser</text>
+
+  <!-- fan -->
+  <circle cx="740" cy="185" r="42" fill="white" stroke="#202124" stroke-width="2"/>
+  <path d="M740,185 L760,155 M740,185 L712,170 M740,185 L768,200 M740,185 L715,205" stroke="#202124" stroke-width="3"/>
+  <text x="715" y="255">fan / drive system</text>
+
+  <!-- flow arrows -->
+  <line x1="40" y1="195" x2="58" y2="195" stroke="#1f6feb" stroke-width="2.5" marker-end="url(#t1)"/>
+  <line x1="265" y1="196" x2="292" y2="196" stroke="#1f6feb" stroke-width="2.5" marker-end="url(#t1)"/>
+  <line x1="545" y1="196" x2="582" y2="196" stroke="#1f6feb" stroke-width="2.5" marker-end="url(#t1)"/>
+
+  <!-- notes -->
+  <rect x="40" y="290" width="860" height="86" rx="8" fill="#eef3fb" stroke="#1f6feb" stroke-width="1"/>
+  <text x="55" y="312" font-weight="bold">Why each element exists:</text>
+  <text x="55" y="331">• Settling chamber: kills turbulence and swirl → clean, known inflow. • Nozzle: sets a uniform, high-quality test speed.</text>
+  <text x="55" y="349">• Rolling road + rotating wheels: reproduces the relative ground motion that dominates race-car aero.</text>
+  <text x="55" y="367">• Balance: measures forces directly. Scale effects (Reynolds number) remain the fundamental limitation — Part XI.</text>
+</svg>

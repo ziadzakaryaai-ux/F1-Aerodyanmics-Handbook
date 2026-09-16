@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" font-family="Segoe UI, Helvetica, sans-serif" font-size="12.5">
+  <defs>
+    <marker id="m1" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+  </defs>
+  <rect width="940" height="480" fill="white"/>
+  <text x="40" y="30" font-weight="bold" font-size="14">CFD computational domain, boundary conditions and mesh refinement (side view)</text>
+
+  <!-- domain -->
+  <rect x="100" y="70" width="740" height="290" fill="#fafafa" stroke="#202124" stroke-width="2"/>
+  <!-- moving ground -->
+  <line x1="100" y1="360" x2="840" y2="360" stroke="#188038" stroke-width="4"/>
+  <path d="M480,368 L510,368" stroke="#188038" stroke-width="2" marker-end="url(#m1)"/>
+  <text x="520" y="374" fill="#188038" font-weight="bold">moving ground, U = V∞ (rolling road equivalent)</text>
+
+  <!-- BCs -->
+  <text x="40" y="120" fill="#1f6feb" font-weight="bold" transform="rotate(-90 40 120)"> </text>
+  <text x="30" y="215" fill="#1f6feb" font-weight="bold">INLET: velocity V∞</text>
+  <text x="845" y="120" fill="#d93025" font-weight="bold">OUTLET:</text>
+  <text x="845" y="136" fill="#d93025" font-weight="bold">pressure</text>
+  <text x="700" y="60" fill="#5f6368">top / sides: slip or far-field</text>
+  <line x1="100" y1="70" x2="100" y2="360" stroke="#1f6feb" stroke-width="3"/>
+  <line x1="840" y1="70" x2="840" y2="360" stroke="#d93025" stroke-width="3"/>
+
+  <!-- car silhouette -->
+  <path d="M330,352 L370,348 L392,330 L440,326 L468,306 L505,300 L555,310 L620,340 L680,352 Z" fill="#3c4043"/>
+  <circle cx="395" cy="350" r="11" fill="#202124"/>
+  <circle cx="620" cy="350" r="12" fill="#202124"/>
+
+  <!-- refinement boxes -->
+  <rect x="560" y="250" width="230" height="100" fill="none" stroke="#f9ab00" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="580" y="268" fill="#b06000" font-weight="bold">wake refinement box</text>
+  <rect x="360" y="330" width="220" height="28" fill="none" stroke="#f9ab00" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="368" y="325" fill="#b06000" font-weight="bold">underbody refinement</text>
+  <rect x="330" y="290" width="330" height="66" fill="none" stroke="#a142f4" stroke-width="1.6" stroke-dasharray="3 3" opacity="0.7"/>
+  <text x="336" y="286" fill="#a142f4">near-body volume refinement</text>
+
+  <!-- inflation layers -->
+  <path d="M330,352 L370,348 L392,330 L440,326 L468,306 L505,300 L555,310 L620,340 L680,352" fill="none" stroke="#1f6feb" stroke-width="0.8" transform="translate(0,-4)"/>
+  <path d="M330,352 L370,348 L392,330 L440,326 L468,306 L505,300 L555,310 L620,340 L680,352" fill="none" stroke="#1f6feb" stroke-width="0.7" transform="translate(0,-8)"/>
+  <path d="M330,352 L370,348 L392,330 L440,326 L468,306 L505,300 L555,310 L620,340 L680,352" fill="none" stroke="#1f6feb" stroke-width="0.6" transform="translate(0,-13)"/>
+  <text x="200" y="300" fill="#1f6feb" font-weight="bold">inflation layers (prisms):</text>
+  <text x="200" y="316" fill="#1f6feb">resolve the boundary layer → correct y⁺</text>
+
+  <!-- legend -->
+  <rect x="40" y="400" width="860" height="66" rx="8" fill="#eef3fb" stroke="#1f6feb" stroke-width="1"/>
+  <text x="55" y="420" font-weight="bold">Rule of thumb: cells must be smallest where gradients are largest (boundary layer, underbody, wakes) — never uniformly fine.</text>
+  <text x="55" y="438">Mesh quality (skewness, aspect ratio) and y⁺ targets decide whether your turbulence model behaves at all (Part XII).</text>
+  <text x="55" y="456" fill="#5f6368">Domain sized so boundaries do not influence the solution: typically several car lengths downstream for wake development.</text>
+</svg>

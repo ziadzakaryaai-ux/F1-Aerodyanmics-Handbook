@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" font-family="Segoe UI, Helvetica, sans-serif" font-size="12.5">
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f6feb"/></marker>
+    <marker id="a2" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#d93025"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#5f6368"/></marker>
+  </defs>
+  <rect width="940" height="440" fill="white"/>
+
+  <!-- LEFT: wing-tip vortex, top view -->
+  <text x="40" y="30" font-weight="bold" font-size="14">How a wing-tip vortex is born (top view)</text>
+  <rect x="80" y="80" width="260" height="50" fill="#c6dafc" stroke="#202124" stroke-width="2"/>
+  <text x="110" y="110">WING (downforce wing)</text>
+  <text x="80" y="155" fill="#5f6368">low pressure below</text>
+  <text x="80" y="60" fill="#5f6368">high(er) pressure above</text>
+  <!-- leakage flow around tip -->
+  <path d="M340,120 q35,5 45,35" fill="none" stroke="#d93025" stroke-width="2.5" marker-end="url(#a2)"/>
+  <path d="M340,90 q60,10 62,70" fill="none" stroke="#d93025" stroke-width="1.6" marker-end="url(#a2)" opacity="0.7"/>
+  <text x="352" y="70" fill="#d93025">pressure-driven leakage around the tip</text>
+  <!-- roll up spiral -->
+  <path d="M385,155 q18,-14 30,0 q10,14 -6,20 q-14,4 -16,-10 q-1,-10 10,-11" fill="none" stroke="#202124" stroke-width="2.2"/>
+  <text x="428" y="160" font-weight="bold">tip vortex rolls up</text>
+  <!-- trailing pair downstream -->
+  <path d="M415,120 L520,112" fill="none" stroke="#1f6feb" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a1)"/>
+  <path d="M415,155 L520,158" fill="none" stroke="#1f6feb" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a1)"/>
+  <text x="440" y="196" fill="#1f6feb">trailing vortex system → induced drag (kinetic energy left in the air)</text>
+  <text x="40" y="235" fill="#5f6368">The vortex is not an extra "device" the wing adds: it is the price of having finite span with a pressure difference.</text>
+
+  <line x1="30" y1="255" x2="910" y2="255" stroke="#e0e0e0" stroke-width="2"/>
+
+  <!-- RIGHT: floor-edge sealing, cross section -->
+  <text x="40" y="285" font-weight="bold" font-size="14">Floor-edge vortex as an aerodynamic "skirt" (cross-section)</text>
+  <!-- floor slab -->
+  <rect x="120" y="360" width="220" height="16" fill="#202124"/>
+  <text x="125" y="395" fill="#5f6368">floor edge (side of the car)</text>
+  <!-- underfloor low pressure zone -->
+  <rect x="120" y="318" width="220" height="42" fill="#c6dafc" opacity="0.8"/>
+  <text x="150" y="345" fill="#1f6feb" font-weight="bold">low pressure UNDER the floor</text>
+  <!-- vortex -->
+  <circle cx="345" cy="340" r="26" fill="none" stroke="#202124" stroke-width="2.4"/>
+  <path d="M330,332 a16,16 0 1 0 18,18" fill="none" stroke="#202124" stroke-width="1.6" marker-end="url(#a3)"/>
+  <text x="300" y="300" font-weight="bold">floor-edge vortex</text>
+  <!-- outside high pressure -->
+  <text x="470" y="330" fill="#d93025" font-weight="bold">higher pressure outside</text>
+  <path d="M462,338 L378,338" fill="none" stroke="#d93025" stroke-width="2" marker-end="url(#a2)"/>
+  <text x="470" y="352" fill="#5f6368" font-size="11">the vortex blocks leakage of outside air</text>
+  <text x="470" y="366" fill="#5f6368" font-size="11">under the floor = keeps the suction "sealed"</text>
+  <text x="470" y="380" fill="#5f6368" font-size="11">(same job as the banned 1970s sliding skirts,</text>
+  <text x="470" y="394" fill="#5f6368" font-size="11">done with fluid mechanics instead of hardware)</text>
+  <rect x="40" y="408" width="860" height="26" rx="6" fill="#eef3fb"/>
+  <text x="55" y="426" fill="#202124">In CFD you will see these structures with Q-criterion iso-surfaces; in the tunnel, with flow-vis paint and tufts (Parts XI, XIV).</text>
+</svg>
